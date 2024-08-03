@@ -171,6 +171,9 @@ textarea::placeholder {
   height: 15px;
   cursor: pointer;
 }
+.checkbox:checked::after {
+  display: none;
+}
 .checkbox::after {
   content: " ";
   background-image: url(../img/studio-img/checkbox.svg);
@@ -203,7 +206,7 @@ label svg {
 
 .form-input {
   height: 40px;
-  padding-left: 28px;
+  padding-left: 42.5px;
   padding-right: 15px;
 }
 .form-input:hover + svg,
@@ -213,8 +216,4 @@ label svg {
 .form-input:hover,
 .form-input:focus {
   border-color: var(--blue-color);
-}
-
-#poshta {
-  padding-left: 30px;
 }
